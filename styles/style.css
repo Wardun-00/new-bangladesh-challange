@@ -494,7 +494,7 @@ select{
 }
 
 .donate-input{
-    color:white;
+    color:rgb(5, 5, 5);
     padding: 40px 20px;
     width: 932px;
     border-radius: 16px;
@@ -627,34 +627,34 @@ small{
 
     /* --- 1. Global Styles & Foundational Resets --- */
     :root {
-        /* rem ক্যালকুলেশনের জন্য ভেরিয়েবল (ঐচ্ছিক, কিন্তু ভালো অভ্যাস) */
+        
         --spacing-small: 1rem;    /* 16px */
         --spacing-medium: 2rem;   /* 32px */
         --spacing-large: 3.5rem;  /* 56px */
     }
 
     * {
-        /* নিশ্চিত করে যে padding এবং border width এর ভেতরে থাকবে */
+        
         box-sizing: border-box;
     }
 
     html {
-        /* rem ইউনিটকে ছোট স্ক্রিনের জন্য সামঞ্জস্যপূর্ণ করা */
+        
         font-size: 16px; 
     }
 
     html, body {
         width: 100%;
-        max-width: 100vw; /* viewport width এর বেশি যেন না যায় */
-        overflow-x: hidden; /* ডানে-বামে স্ক্রলিং সম্পূর্ণ বন্ধ */
+        max-width: 100vw; 
+        overflow-x: hidden; 
     }
 
     body {
-        padding-left: 1rem;  /* 16px */
-        padding-right: 1rem; /* 16px */
+        padding-left: 1rem;  
+        padding-right: 1rem; 
     }
 
-    /* বড় মার্জিন রিসেট করার জন্য গ্রুপড সিলেক্টর */
+    
     .hero-section-main, .section-2-title, .section-2-card-container,
     .section-3, .section-table-container, .section-news-main,
     .donate-title-text, .money-box-container, .extra-div,
@@ -663,7 +663,6 @@ small{
         margin-right: 0;
     }
     
-    /* সেকশনের মধ্যে উল্লম্ব স্পেস */
     .hero-section-main, .section-2-title, .section-3, 
     .section-table-container, .section-news-main, .donate-title,
     .subscribe-container {
@@ -739,15 +738,15 @@ small{
     .total-table {
         width: 100%;
         display: block;
-        overflow-x: auto; /* ডানে-বামে স্ক্রল করার সুবিধা */
-        -webkit-overflow-scrolling: touch; /* iOS এ স্মুথ স্ক্রলিং */
-        border: 1px solid #ddd; /* স্ক্রল করা যাবে বোঝানোর জন্য বর্ডার */
+        overflow-x: auto; 
+        -webkit-overflow-scrolling: touch; 
+        border: 1px solid #ddd; 
         border-radius: 8px;
         padding: 0;
     }
     table {
         width: 100%;
-        min-width: 600px; /* টেবিল যেন বেশি চেপে না যায় */
+        min-width: 600px; 
         border-collapse: collapse;
     }
     th, td { padding: 0.75rem; }
@@ -790,19 +789,19 @@ small{
     .subscribe-passage { margin-top: 1rem; }
     .subscribe-input {
         width: 100%;
-        max-width: 500px; /* ফর্মের সর্বোচ্চ প্রস্থ */
+        max-width: 500px; 
         margin: 1.5rem auto 0 auto;
         display: flex;
-        flex-wrap: wrap; /* ছোট স্ক্রিনে বাটন নিচে আসবে */
-        gap: 0.75rem; /* 12px */
+        flex-wrap: wrap; 
+        gap: 0.75rem; 
     }
     .input-field {
-        flex-grow: 1; /* ইনপুট ফিল্ড বাকি জায়গা নিবে */
-        min-width: 200px; /* ইনপুট যেন বেশি ছোট না হয় */
+        flex-grow: 1; 
+        min-width: 200px; 
         padding: 1rem;
     }
     .subscribe-input .common-button {
-        flex-grow: 1; /* বাটনও জায়গা অনুযায়ী বড় হবে */
+        flex-grow: 1; 
     }
     .promise { margin-top: 1rem; }
 
@@ -816,7 +815,7 @@ small{
 }@media (max-width: 768px) {
 
     /* --- Global Resets for Mobile --- */
-    /* এই কোডটি padding এবং border সহ width গণনা করে, যা overflow আটকায় */
+    
     * {
         box-sizing: border-box;
     }
@@ -824,11 +823,11 @@ small{
     html, body {
         width: 100%;
         max-width: 100%;
-        overflow-x: hidden; /* ডানে-বামে স্ক্রলিং পুরোপুরি বন্ধ করা হলো */
+        overflow-x: hidden; 
     }
 
     body {
-        /* সাইডে একটু জায়গা রাখার জন্য প্যাডিং */
+        
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -836,8 +835,8 @@ small{
     /* --- Header Section --- */
     header {
         height: auto;
-        flex-direction: column; /* লোগো এবং বাটন একটির নিচে আরেকটি আসবে */
-        align-items: center;   /* সবকিছু মাঝখানে আসবে */
+        flex-direction: column; 
+        align-items: center;  
         padding: 20px 0;
         gap: 20px;
     }
@@ -859,8 +858,8 @@ small{
 
     .hero-section {
         width: 100%;
-        height: auto; /* উচ্চতা কন্টেন্ট অনুযায়ী সেট হবে */
-        flex-direction: column; /* টেক্সট এবং ছবি একটির নিচে আরেকটি আসবে */
+        height: auto; 
+        flex-direction: column; 
         padding: 30px 20px;
     }
 
@@ -876,12 +875,12 @@ small{
     .body-title {
         width: 100%;
         height: auto;
-        font-size: 38px; /* মোবাইলের জন্য উপযুক্ত ফন্ট সাইজ */
+        font-size: 38px; 
         line-height: 1.2;
     }
 
     .explore-btn {
-        display: inline-block; /* বাটনকে ঠিকভাবে দেখানোর জন্য */
+        display: inline-block; 
         margin-top: 25px;
         padding: 18px 25px;
     }
@@ -889,7 +888,7 @@ small{
     .hero-image {
         width: 90%;
         height: auto;
-        margin: 30px auto 0 auto; /* ছবিকে মাঝখানে আনার জন্য */
+        margin: 30px auto 0 auto; 
     }
 
     /* --- Section 2: Cards --- */
@@ -900,8 +899,8 @@ small{
     }
 
     .section-2-card-container {
-        flex-direction: column; /* কার্ডগুলো নিচে নিচে আসবে */
-        align-items: center;    /* কার্ডগুলো মাঝখানে আসবে */
+        flex-direction: column; 
+        align-items: center;    
         width: 100%;
         height: auto;
         gap: 20px;
@@ -910,7 +909,7 @@ small{
 
     .section-2-card {
         width: 100%;
-        max-width: 380px; /* কার্ডের সর্বোচ্চ প্রস্থ নির্ধারণ */
+        max-width: 380px; 
     }
 
     .section-2-card-title,
@@ -932,12 +931,12 @@ small{
         padding: 0 10px;
     }
     .section-3-main-title{
-        font-size: 30px; /* টাইটেল ফন্ট সাইজ কমানো হয়েছে */
+        font-size: 30px; 
     }
 
     .sectin-3-main {
         flex-direction: column;
-        align-items: center; /* কার্ডগুলো মাঝখানে আসবে */
+        align-items: center; 
         gap: 20px;
         margin-top: 20px;
     }
@@ -946,7 +945,7 @@ small{
     .section-3-card-container-2,
     .section-3-card-container-3 {
         width: 100%;
-        max-width: 400px; /* সর্বোচ্চ প্রস্থ নির্ধারণ */
+        max-width: 400px; 
         height: auto;
         padding: 25px;
     }
@@ -969,7 +968,7 @@ small{
         height: auto;
     }
     .sectin-3-card-bottom-passage {
-        background-size: 40px; /* quote আইকন ছোট করা */
+        background-size: 40px; 
     }
     
     /* --- Table Section --- */
@@ -981,7 +980,7 @@ small{
         width: 100%;
         height: auto;
         padding: 0;
-        /* এই কোডটি টেবিলকে ডানে-বামে স্ক্রল করার সুযোগ দেবে */
+        
         overflow-x: auto;
         display: block;
     }
@@ -994,7 +993,7 @@ small{
 
     table {
         width: 100%;
-        min-width: 600px; /* টেবিলের একটি সর্বনিম্ন প্রস্থ, যেন বেশি চেপে না যায় */
+        min-width: 600px; 
     }
 
     /* --- News Section --- */
@@ -1015,7 +1014,7 @@ small{
     }
 
     .news-image {
-        order: -1; /* ছবিকে কার্ডের উপরে নিয়ে আসা হলো */
+        order: -1; 
         width: 100%;
         height: auto;
     }
@@ -1045,7 +1044,7 @@ small{
     }
 
     .money-box-container {
-        flex-direction: column; /* বাটনগুলো নিচে নিচে আসবে */
+        flex-direction: column; 
         align-items: center;
         gap: 15px;
         margin: 0;
@@ -1068,12 +1067,12 @@ small{
         max-width: 350px;
         margin-left: auto;
         margin-right: auto;
-        display: block; /* এটিকে ব্লক এলিমেন্ট বানানো হলো */
+        display: block; 
     }
 
     .main-input-btn {
         margin: 40px 0 0 0;
-        text-align: center; /* বাটন মাঝখানে আনার জন্য */
+        text-align: center; 
     }
 
     /* --- Subscribe Section --- */
@@ -1108,11 +1107,11 @@ small{
 
     .input-field {
         width: 100%;
-        margin-bottom: 15px; /* ইনপুট এবং বাটনের মধ্যে স্পেস */
+        margin-bottom: 15px; 
     }
     
     .subscribe-input .common-button {
-        width: auto; /* বাটনকে তার কন্টেন্টের সমান করা হলো */
+        width: auto; 
         padding: 15px 30px;
     }
     
